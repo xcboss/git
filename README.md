@@ -66,3 +66,12 @@ $ git remote add upstream git://github.com/pjhyett/github-services.git
 $ git://github.com/pjhyett/github-services.git为“upstream”
 
 
+部分问题：
+
+fatal: Not a git repository (or any of the parent directories): .git
+
+没有.git这样一个目录，解决办法如下：
+
+git init就可以了！
+
+
