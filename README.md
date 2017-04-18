@@ -74,6 +74,9 @@ fatal: Not a git repository (or any of the parent directories): .git
 
 git init就可以了！
 
+
+##  git回到指定版本命令
+
 git reset 是指将当前head的内容重置，不会留log信息。
 
 git reset HEAD filename  从暂存区中移除文件
