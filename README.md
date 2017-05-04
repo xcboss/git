@@ -34,6 +34,8 @@
   $ git remote add origin git@github.com:yourName/yourRepo.git
 
   后面的yourName和yourRepo表示你再github的用户名和刚才新建的仓库，加完之后进入.git，打开config，这里会多出一个remote "origin"内容，这就是刚才添加的远程地址，也可以直接修改config来配置远程地址。
+  
+  >ps:如果输入$ Git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git<br>提示出错信息：fatal: remote origin already exists.<br>解决办法如下：<br>1、先输入$ git remote rm origin<br>2、再输入$ git remote add origin git@github.com:djqiang/gitdemo.git 就不会报错了！<br>3、如果输入$ git remote rm origin 还是报错的话，error: Could not remove config section 'remote.origin'. 我们需要修改gitconfig文件的内容<br>4、找到你的github的安装路径，我的是C:\Users\ASUS\AppData\Local\GitHub\PortableGit_ca477551eeb4aea0e4ae9fcd3358bd96720bb5c8\etc<br>5、找到一个名为gitconfig的文件，打开它把里面的[remote "origin"]那一行删掉就好了！
 
 
 6.生成快照并存入项目索引：
